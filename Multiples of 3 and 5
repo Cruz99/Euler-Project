@@ -1,0 +1,19 @@
+
+
+
+
+Sub multiples35()
+
+Dim three As Integer, five As Integer, sum As Double
+
+three = 3
+five = 5
+sum = 0
+
+For x = 0 To 1000
+    If x Mod three = 0 Or x Mod five = 0 Then
+        sum = sum + x
+    End If
+Next
+
+End Sub
