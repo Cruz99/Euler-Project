@@ -1,0 +1,27 @@
+
+
+
+Sub evenFibonacciNum()
+
+Dim temp1 As Long, temp2 As Long
+Dim temp3 As Double, sum As Double
+
+temp1 = 1
+temp2 = 1
+temp3 = 3
+x = 1
+Do While temp3 < 4000000
+    
+    temp3 = temp1 + temp2
+    temp1 = temp2
+    temp2 = temp3
+
+    If temp3 > 4000000 Then
+        Exit Do
+    End If
+    If temp3 Mod 2 = 0 Then
+        sum = sum + temp3
+    End If
+Loop
+
+End Sub
